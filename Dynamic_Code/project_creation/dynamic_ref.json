@@ -1,0 +1,17 @@
+{
+    "tables": {
+        "participant_tf": {
+            "dataset_id": "datalake_gsc",
+            "table_id": "participant_tf",
+            "schema_path": "participant_TF.json",
+            "partition_type": "DAY",
+            "clustering": ["sex_type_cd"]
+        },
+        "address_tf": {
+            "dataset_id": "datalake_gsc",
+            "table_id": "address_tf",
+            "schema_path": "address_TF.json",
+            "partition_type": "DAY",
+            "partition_field": "insert_timestamp"
+        }
+    }    
